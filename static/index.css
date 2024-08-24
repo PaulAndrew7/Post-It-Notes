@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://i.postimg.cc/mZv2pvjR/1193275-x16-drawing-min.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.Logo {
+    font-size: 2em;
+    color: #000000;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+.navigation .btnlogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 200px;
+    transition: .5s;
+}
+
+.navigation .btnlogin-popup:hover {
+    background: white;
+    color: #ff0000;
+}
+
+.create {
+    width: 300px;
+    padding: 15px;
+    margin: 15px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px rgba(0, 0, 0, .5);
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.create h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.create a {
+    margin: 5px 0;
+    color: #ff6bae;
+}
+
+.create .btn {
+    margin: 5px 0;
+    color: #ff6bae;
+}
+
+.display {
+    width: 300px;
+    padding: 15px;
+    margin: 15px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px rgba(0, 0, 0, .5);
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.display h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.display a {
+    margin: 5px 0;
+    color: #666;
+}
+
+.display .btn{
+    margin: 5px 0;
+    color: #ff6bae;
+}
+
+.create:hover,
+.display:hover {
+    transform: scale(1.05); /* Enlarge on hover */
+    transition: transform 0.3s ease-in; /* Add a smooth transition effect */
+    
+}
+
+.create,
+.display {
+    transition: transform 0.3s ease-out; /* Apply transition to both initially */
+}

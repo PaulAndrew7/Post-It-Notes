@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://i.postimg.cc/mZv2pvjR/1193275-x16-drawing-min.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.back-button {
+    font-size: 4em;
+    color: #000000;
+    cursor: pointer;
+    
+}
+
+.home {
+    font-size: 1.5em;
+    position: fixed;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.wrapper .info {
+    font-size: 2em;
+    color: black;
+    user-select: none;
+    justify-content: center;
+    display: flex;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.wrapper {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}   

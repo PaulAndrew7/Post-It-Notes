@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}"> 
+    <style>
+        a {
+            text-decoration: none; /* Remove underlines */
+            color: inherit; /* Inherit the color from the parent */
+        }
+
+        .create, .display {
+            display: block; /* Make the entire box clickable */
+            text-align: center; /* Center the text within the box */
+            margin: 10px; /* Add some margin for better spacing */
+        }
+
+        .create .btn, .display .btn {
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2 class="logo">Post it Notes</h2>
+    <nav class="navigation">
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="#">Home</a>
+    </nav>
+</header>
+
+<div class="options">
+    <a href="/create" class="create">
+      <h2>Create New Note</h2>
+    </a>
+
+    <a href="/display" class="display">
+      <h2>Display Notes</h2>
+    </a>
+  </div>
+</body>
+</html>

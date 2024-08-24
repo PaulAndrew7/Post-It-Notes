@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Edit Note </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styleedit.css') }}">
+    </head>
+<body>
+    <header>
+        <h2 class="Logo">Edit Note</h2>
+    </header>
+    <form method="POST" action="/edit/{{ note_id }}">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" value="{{ note[0] }}" required>
+        <br>
+        <label for="desc">Description:</label>
+        <textarea name="desc" id="desc" required>{{ note[1] }}</textarea>
+        <br>
+        <input type="submit" value="Update Note" class="button">
+    </form>
+</body>
+</html>
